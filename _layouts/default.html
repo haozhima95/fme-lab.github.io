@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'en' }}">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }} | FME Lab</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <header>
+    <h1>FME Lab</h1>
+
+    <nav>
+      {% if page.lang == "zh" %}
+        <a href="{{ '/zh/' | relative_url }}">首页</a>
+        <a href="{{ '/zh/research/' | relative_url }}">研究</a>
+        <a href="{{ '/zh/people/' | relative_url }}">团队</a>
+        <a href="{{ '/zh/publications/' | relative_url }}">论文</a>
+        <a href="{{ '/zh/openings/' | relative_url }}">招聘</a>
+        <a href="{{ '/zh/contact/' | relative_url }}">联系</a>
+      {% else %}
+        <a href="{{ '/en/' | relative_url }}">Home</a>
+        <a href="{{ '/en/research/' | relative_url }}">Research</a>
+        <a href="{{ '/en/people/' | relative_url }}">People</a>
+        <a href="{{ '/en/publications/' | relative_url }}">Publications</a>
+        <a href="{{ '/en/openings/' | relative_url }}">Openings</a>
+        <a href="{{ '/en/contact/' | relative_url }}">Contact</a>
+      {% endif %}
+    </nav>
+
+    {% include lang-switch.html %}
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer>
+    <p>&copy; FME Lab</p>
+  </footer>
+</body>
+</html>
