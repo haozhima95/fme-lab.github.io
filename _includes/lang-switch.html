@@ -1,0 +1,11 @@
+{% assign translations = site.pages | where: "ref", page.ref | sort: "lang" %}
+
+<div class="language-switch">
+  {% for item in translations %}
+    {% if item.lang == "en" %}
+      <a href="{{ item.url | relative_url }}">English</a>
+    {% elsif item.lang == "zh" %}
+      <a href="{{ item.url | relative_url }}">中文</a>
+    {% endif %}
+  {% endfor %}
+</div>
