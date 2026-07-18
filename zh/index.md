@@ -10,8 +10,8 @@ permalink: /zh/
   <div class="container hero-grid">
     <div>
       <p class="eyebrow">功能宏生态学实验室</p>
-      <h1>理解植物的形态与功能如何塑造地球生命格局</h1>
-      <p class="lead">我们研究植物功能性状、生物多样性和生物群系的宏观格局，以及植被、气候与全球变化之间的相互作用如何形成这些格局。</p>
+      <h1>从功能到格局</h1>
+      
       <div class="actions"><a class="button" href="{{ '/zh/research/' | relative_url }}">了解研究方向</a><a class="text-link" href="{{ '/zh/openings/' | relative_url }}">加入我们 →</a></div>
     </div>
     <div class="hero-art" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
