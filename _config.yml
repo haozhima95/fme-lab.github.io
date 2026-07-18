@@ -1,9 +1,8 @@
 title: FME Lab
 description: Functional Macroecology Lab | 功能宏生态学实验室
 url: "https://haozhima95.github.io"
-baseurl: ""
+baseurl: "/fme-lab.github.io"
 markdown: kramdown
 permalink: pretty
 exclude:
   - README.md
-
